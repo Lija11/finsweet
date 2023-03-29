@@ -1,0 +1,57 @@
+.title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.aboutProcessFlex {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 61px;
+}
+
+.aboutProcessCard h5 {
+  margin-top: 32px !important;
+  margin-bottom: 8px;
+}
+
+.circle {
+  position: relative;
+  border: 1px solid #2405f2;
+  border-style: dashed;
+  width: 224px;
+  margin-left: 50px;
+}
+
+.circle::after {
+  position: absolute;
+  content: "";
+  top: -13px;
+  left: -51px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #2405f2;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .aboutProcessFlex {
+    display: block;
+    text-align: center;
+  }
+  .aboutProcessCard h5 {
+    text-align: center;
+  }
+  .aboutProcessCard {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .aboutProcessFlex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .aboutProcessCard {
+    margin-top: 30px;
+  }
+}

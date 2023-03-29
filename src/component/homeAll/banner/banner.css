@@ -1,0 +1,148 @@
+.banner {
+  background: #1c1e53;
+  /* padding: 80px; */
+}
+
+.bannerFlex {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 60px;
+}
+
+.bannerText {
+  width: 540px;
+}
+
+.bannerText h1 {
+  margin-bottom: 24px;
+}
+
+.bannerText p {
+  color: #ffffffb3;
+}
+
+.bannerBtn {
+  margin-top: 48px;
+}
+
+.bannerBtn a {
+  padding: 15px 55px;
+  border: 2px solid transparent;
+  background: #fcd980;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bannerBtn a:hover {
+  background: transparent;
+  border-color: #bbbbcb;
+  color: #ffffff;
+}
+
+.bannerBtn a:last-child {
+  background: transparent;
+  border: none;
+  padding: 15px 0;
+  color: #ffffff;
+  margin-left: 40px;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.bannerBtn a:last-child i {
+  margin-left: 5px;
+}
+
+.bannerBtn a:last-child::after {
+  position: absolute;
+  content: "";
+  left: -100%;
+  bottom: 10px;
+  width: calc(100% - 0px);
+  height: 2px;
+  background: #fcd980;
+  transition: 0.5s;
+}
+
+.bannerBtn a:last-child:hover::after {
+  left: 0;
+}
+
+.bannerImg {
+  width: 540px;
+}
+
+.bannerImg img {
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .bannerFlex {
+    display: block;
+    text-align: center;
+  }
+  .bannerText {
+    width: auto;
+  }
+  .bannerImg {
+    display: none;
+  }
+  h1 {
+    font-size: 40px !important;
+    line-height: 53px !important;
+  }
+  p {
+    font-size: 14px !important;
+  }
+  .bannerBtn a {
+    padding: 10px 20px;
+  }
+  .bannerBtn a:last-child {
+    margin-left: 20px;
+  }
+  .bannerBtn {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .bannerText {
+    width: auto;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .bannerImg {
+    width: auto;
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* @media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .tp-bt-btn {
+    padding: 20px 30px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .tp-bt-btn {
+    padding: 20px 15px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .tp-bt-btn {
+    box-shadow: rgba(100, 100, 111, 0.1) 1px 5px 20px 1px;
+    line-height: 1;
+    padding: 16px 25px 12px 25px;
+  }
+} */

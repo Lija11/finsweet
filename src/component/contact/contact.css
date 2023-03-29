@@ -1,0 +1,108 @@
+.contactTitle {
+  width: 550px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.contactTitle {
+  margin-bottom: 16px;
+}
+
+.contactForm {
+  background: #f4f6fc;
+  border-radius: 12px;
+  padding: 80px;
+  margin: 0 80px;
+}
+
+.inputFlex {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+  flex-wrap: wrap;
+}
+
+.inputItem {
+  width: 48%;
+}
+
+.inputItem label {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.inputItem .name,
+.inputItem .email,
+.inputItem .subject {
+  width: 100%;
+  background: transparent;
+  padding: 16px 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.inputFlex .inputItem:last-child {
+  width: 100%;
+}
+
+.message {
+  width: 100%;
+  height: 150px;
+  background: transparent;
+  padding: 16px 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  resize: none;
+}
+
+.submit {
+  padding: 18px 60px;
+  background: #282938;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.5s;
+  margin-top: 30px;
+}
+
+.submit:hover {
+  background: transparent;
+  border-color: #1c1e53;
+  color: #1c1e53;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1199px) {
+  .contactTitle {
+    width: auto;
+  }
+  .contactForm {
+    padding: 0px;
+    margin: 40px 0px;
+  }
+  .inputFlex {
+    display: block;
+  }
+  .inputItem {
+    width: auto;
+  }
+}

@@ -1,0 +1,43 @@
+.blogHeading{
+    text-align: center;
+}
+
+.blogHeading p{
+    margin-bottom: 25px;
+}
+
+.blogBannerImg img{
+    width: 100%;
+}
+
+.blogBannerText{
+    text-align: center;
+    width: 830px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.blog .blog_flex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.blog .blog_item {
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.blog .blog_item:nth-child(4),
+.blog .blog_item:nth-child(5),
+.blog .blog_item:nth-child(6) {
+    margin-bottom: 0px;
+}
+
+.blog .blog_item img{
+    width: 100%;
+}
+
+.ourBlog h2{
+    margin-bottom: 40px;
+    text-align: center;
+}

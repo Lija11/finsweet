@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  vertical-align: middle;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #1b1c2b;
+  transition: 0.5s;
+}
+
+h1 {
+  font-size: 54px;
+  line-height: 74px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 600;
+  color: #282938;
+}
+@media (max-width: 991px) {
+  h2 {
+    font-size: 40px !important;
+    line-height: 50px;
+  }
+}
+
+h3 {
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 600;
+  color: #282938;
+}
+
+h4 {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 500;
+  color: #282938;
+}
+
+h5 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 500;
+  color: #282938;
+}
+
+h6 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #282938;
+}
+
+p {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #282938b3;
+}
+
+.commonBtn {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #282938;
+  position: relative;
+  overflow: hidden;
+}
+
+.commonBtn i {
+  margin-left: 10px;
+}
+
+.commonBtn::after {
+  position: absolute;
+  content: "";
+  left: -100%;
+  bottom: 0px;
+  width: calc(100% - 0px);
+  height: 2px;
+  background: #fcd980;
+  transition: 0.5s;
+}
+
+.commonBtn:hover::after {
+  left: 0;
+}
+
+button {
+  background-color: transparent;
+}
+
+/* section {
+  padding: 60px 0;
+} */
+
+.padding {
+  padding: 80px 0;
+}
+
+@media (max-width: 991px) {
+  .padding {
+    padding: 50px 0;
+  }
+  h1 {
+    font-size: 40px !important;
+    line-height: 50px;
+  }
+}
+
+/* @media only screen and (min-width: 320px) and (max-width: 1199px) {
+  h1 {
+    font-size: 40px !important;
+    line-height: 50;
+  }
+} */
+
+/* @media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .tp-bt-btn {
+    padding: 20px 30px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .tp-bt-btn {
+    padding: 20px 15px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .tp-bt-btn {
+    box-shadow: rgba(100, 100, 111, 0.1) 1px 5px 20px 1px;
+    line-height: 1;
+    padding: 16px 25px 12px 25px;
+  }
+} */

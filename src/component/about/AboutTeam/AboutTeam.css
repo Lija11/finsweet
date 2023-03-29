@@ -1,0 +1,105 @@
+.aboutTeam {
+  background: #f4f6fc;
+}
+
+.aboutTeamFlex {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 50px;
+}
+
+.aboutTeamItem {
+  padding: 35px;
+  background-color: #fff;
+}
+
+.aboutTeamItemImage {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.aboutTeamItemImage::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0%;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    348.37deg,
+    #5239fa 17.97%,
+    rgba(255, 255, 255, 0) 79.2%
+  );
+  border-radius: 50%;
+  transition: 0.5s;
+  z-index: 0;
+}
+
+.aboutTeamItem:hover .aboutTeamItemImage::after {
+  height: 100%;
+}
+
+.aboutTeamItemText {
+  margin-top: 30px;
+}
+
+.aboutTeamFlex .aboutTeamItemText .name,
+.pro {
+  margin: 0;
+  text-align: center;
+}
+
+.aboutTeamItemText h6 {
+  color: #1d2130;
+  opacity: 0.7;
+}
+
+.aboutTeamItemImage .icon {
+  position: absolute;
+  bottom: -8px;
+  z-index: 9999;
+  display: none;
+  transition: 0.5s;
+}
+
+.aboutTeamItem:hover .aboutTeamItemImage .icon {
+  display: block;
+  bottom: 8px;
+}
+
+.aboutTeamItemImage .icon ul {
+  display: flex;
+  column-gap: 26px;
+}
+
+.aboutTeamItemImage .icon ul li a {
+  font-size: 14px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.aboutTeamItemImage .icon ul li a:hover {
+  color: #fcd980;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .aboutTeam {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .aboutTeamFlex {
+    column-gap: 10px;
+  }
+  .aboutTeamItem {
+    padding: 0px;
+  }
+  .aboutTeamItemText {
+    margin-top: 20px;
+  }
+  .aboutTeam {
+    margin-bottom: 40px;
+  }
+}

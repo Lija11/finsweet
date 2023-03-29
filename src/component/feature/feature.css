@@ -1,0 +1,50 @@
+.brands {
+  margin: 60px 0;
+}
+
+/* .features section{
+    padding: 0 !important;
+} */
+
+.features {
+  background-color: #fff;
+}
+
+.features .aboutMissionFlex {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 2%;
+}
+
+.features .aboutMission {
+  background: transparent;
+}
+
+.features .aboutText {
+  width: 48% !important;
+  margin-top: 45px;
+}
+
+.features .aboutImg {
+  width: 48% !important;
+  overflow: hidden;
+}
+
+.features .middleGap {
+  margin-top: 0 !important;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+  .features .aboutMissionFlex {
+    display: block;
+  }
+  .features .aboutText {
+    width: auto !important;
+  }
+  .features .aboutImg {
+    width: auto !important;
+  }
+  .features .middleGap {
+    margin-top: 40px !important;
+  }
+}

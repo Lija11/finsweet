@@ -1,0 +1,156 @@
+.priceTitle {
+  width: 570px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.priceFlex {
+  display: flex;
+  justify-content: space-between;
+  row-gap: 32px;
+}
+
+.priceItem {
+  background: #f4f6fc;
+  border-radius: 12px;
+  padding: 35px;
+  transition: 0.5s;
+}
+
+.priceItem:hover {
+  background: #1c1e53;
+  color: #fff !important;
+}
+
+.priceTitle p {
+  margin-top: 16px;
+  margin-bottom: 65px;
+}
+
+.priceDesign {
+  position: relative;
+}
+
+.priceDesign h2 {
+  transition: 0.5s;
+}
+
+.priceItem:hover .priceDesign h2 {
+  color: #fff;
+}
+
+span {
+  color: #2405f2;
+  font-size: 16px;
+  position: absolute;
+  top: 18px;
+  left: 95px;
+  transition: 0.5s;
+}
+
+.priceItem:hover span {
+  color: #fcd980;
+}
+
+.priceItemTitle h6 {
+  transition: 0.5s;
+}
+
+.priceItemTitle {
+  height: 100px;
+}
+
+.priceItemTitle p {
+  width: 280px;
+  margin-top: 8px;
+  transition: 0.5s;
+}
+
+.priceItem:hover .priceItemTitle h6 {
+  color: #fff;
+}
+
+.priceItem:hover .priceItemTitle p {
+  color: #fff;
+}
+
+.priceLinkItem {
+  margin-bottom: 0;
+  padding-left: 0;
+  margin-top: 60px;
+}
+
+.priceLinkItem li {
+  color: #282938;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  position: relative;
+  margin-left: 35px;
+  margin-bottom: 20px;
+  transition: 0.5s;
+}
+
+.priceItem:hover .priceLinkItem li {
+  color: #ffffff;
+}
+
+.priceLinkItem li:last-child {
+  margin-bottom: 0;
+}
+
+.priceLinkItem li::after {
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 18px;
+  left: -38px;
+  top: 4px;
+  background: #97daad;
+  border-radius: 3px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: rotate(90deg);
+}
+
+.priceItem .btn {
+  background: #282938;
+  border-radius: 41px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 15px 50px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 60px;
+  align-items: center;
+  display: flex;
+  transition: 0.5s;
+}
+
+.priceItem:hover .btn {
+  background: #fcd980;
+  color: #282938;
+  border: none;
+}
+
+.priceFAQ {
+  padding: 0 !important;
+}
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+  .priceTitle {
+    width: auto;
+  }
+  .price {
+    margin-top: 30px;
+  }
+  .priceFlex {
+    display: block;
+  }
+  .priceTitle p {
+    margin-bottom: 20px;
+  }
+  .priceItemTitle p {
+    width: auto;
+  }
+}

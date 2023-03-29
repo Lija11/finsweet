@@ -1,0 +1,41 @@
+.policy_title {
+    width: 550px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.policy_title h2 {
+    margin-bottom: 16px;
+}
+
+.policy_rules {
+    margin: 0 150px;
+}
+
+.policy_rules .policy_text:first-child {
+    margin-bottom: 40px;
+}
+
+.policy_rules .policy_text h3 {
+    margin-bottom: 32px;
+}
+
+.policy_rules .policy_text p:nth-child(2) {
+    margin-bottom: 24px;
+}
+
+.policy_rules .policy_text p:nth-child(2) span {
+    color: rgb(36, 5, 242, .8);
+}
+
+.policy_rules .policy_text ul {
+    margin-left: 15px;
+    margin-bottom: 16px;
+}
+
+.policy_rules .policy_text ul li {
+    list-style-type: disc;
+    color: rgb(40, 41, 56, .7);
+    line-height: 36px;
+}
