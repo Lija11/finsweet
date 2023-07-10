@@ -44,10 +44,6 @@ const FAQ = () => {
                 <span>{index + 1 > 9 ? index + 1 : `0${index + 1}`}</span>
                 <h5>{item.title}</h5>
                 {item.status && <p>{item.details}</p>}
-                {/* <i className="fa-solid fa-xmark"></i> */}
-                {/* <button onClick={() => {setFAQ(!FAQ)}}>
-                                {item.status = false ? <i className="fa-solid fa-xmark"/> : '+'}
-                                </button> */}
                 <button
                   onClick={() => {
                     setToggle(!toggle);
